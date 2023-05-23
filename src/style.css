@@ -229,15 +229,30 @@ p {
         justify-content: flex-end;
         flex-direction: column-reverse;
     }
+
     .headshot-container {
         height: 100px;
         margin-top: -20px;
     }
-    .headshot {
 
+    .headshot {
         width: 200px;
         position: absolute;
-        margin-left: 205px;
+        margin-left: 220px;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .sub-section {
+        padding: 25px;
+    }
+
+    .headshot {
+        width: 120px;
+    }
+
+    footer p {
+        font-size: 22px;
     }
 }
 
