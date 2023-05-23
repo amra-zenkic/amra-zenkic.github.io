@@ -1,11 +1,12 @@
-
 body {
     font-family: 'Poppins', sans-serif;
     margin: 0;
 }
+
 section {
     background-color: white;
 }
+
 .hero {
     background-color: #1e162b;
     height: 100vh;
@@ -13,6 +14,7 @@ section {
     font-size: 40px;
     cursor: url('images/cursor.png'), auto !important;
 }
+
 footer {
     background-color: black;
     color: white;
@@ -20,10 +22,12 @@ footer {
     padding: 80px;
     cursor: url('images/cursor.png'), auto;
 }
+
 nav {
     display: flex;
     justify-content: space-between;
 }
+
 nav ul {
     display: flex;
     list-style-type: none;
@@ -36,9 +40,11 @@ nav ul li {
     text-decoration: none;
     padding-top: 20px;
 }
+
 nav ul li a {
     position: relative;
 }
+
 nav ul li a::after {
     content: "";
     width: 0;
@@ -49,16 +55,18 @@ nav ul li a::after {
     left: 0;
     transition: all 500ms;
 }
+
 nav ul li a:hover::after {
     width: 100%;
 }
+
 a:hover {
     cursor: url('images/cursor.png'), auto;
 }
 
 .cursor {
     border-radius: 50%;
-    
+
     left: 0;
     top: 0;
     margin-left: -16px;
@@ -66,6 +74,7 @@ a:hover {
     pointer-events: none;
     transition: width 800ms, height 800ms;
 }
+
 #mouse-circle {
     position: absolute;
     width: 64px;
@@ -78,12 +87,14 @@ a:hover {
     pointer-events: none;
     transition: width 800ms, height 800ms;
 }
+
 #mouse-circle.large {
     height: 90px;
     width: 90px;
     margin-left: -38px;
     margin-top: -38px;
 }
+
 #mouse-circle.black {
     border: 1px solid black;
 }
@@ -92,28 +103,34 @@ h1 {
     font-size: 90px;
     margin: 0;
 }
+
 h2 {
     font-size: 50px;
 }
+
 p {
     margin: 0;
     font-size: 30px;
     font-weight: 300;
 }
+
 .subtext {
     font-size: 15px;
     font-weight: 300;
 }
+
 .hero-area {
     display: flex;
     justify-content: space-between;
     align-items: center;
     height: 100%;
 }
+
 .hero-text {
     margin-left: 40px;
     margin-bottom: 200;
 }
+
 .button {
     width: 200px;
     height: 50px;
@@ -124,21 +141,26 @@ p {
     font-weight: 300;
     margin-top: 20px;
 }
+
 .button:hover {
     background-color: #ef744b;
 }
+
 .button:active {
     background-color: #A9A9A9;
     color: #808080;
 }
+
 .socials {
     padding-bottom: 200px;
-    
+
 }
+
 .logo {
     height: 80px;
     margin: 30px;
 }
+
 .socials img {
     filter: invert(1);
     height: 50px;
@@ -147,12 +169,14 @@ p {
 .social {
     margin: 10px;
 }
+
 .sub-section {
     display: flex;
     justify-content: space-around;
     padding: 80px;
     cursor: url('images/cursor-black.png'), auto;
 }
+
 .sub-section p {
     font-size: 22px;
 }
@@ -164,55 +188,87 @@ p {
     padding: 80px;
     cursor: url('images/cursor-black.png'), auto;
 }
+
 .headshot {
     width: 300px;
     border-radius: 160px;
 }
+
 .headshot-container {
     display: flex;
     align-items: center;
 }
+
 .project-card {
     width: 300px;
     height: 500px;
     box-shadow: 5px 5px 30px rgb(197, 195, 195);
     margin: 10px;
 }
+
 .project-container {
     display: flex;
     justify-content: space-around;
 
 }
+
 /* all displays smaller or equal to 1000px will have different look*/
-@media only screen and (max-width: 1000px) { 
+@media only screen and (max-width: 1000px) {
     .project-container {
         display: flex;
         flex-wrap: wrap;
     }
+
+    .cursor {
+        display: none;
+    }
+
+    .sub-section {
+        display: inline-flex;
+        justify-content: flex-end;
+        flex-direction: column-reverse;
+    }
+    .headshot-container {
+        height: 100px;
+        margin-top: -20px;
+    }
+    .headshot {
+
+        width: 200px;
+        position: absolute;
+        margin-left: 70%;
+    }
 }
+
 .project-card img {
     margin-top: 25px;
     width: 250px;
     border-radius: 125px;
 }
+
 hr {
     margin-left: 20px;
     margin-right: 20px;
 }
+
 .project-link {
     text-decoration: none;
     color: #ef744b;
 }
+
 a {
     text-decoration: none;
     color: white;
 }
+
 .hamburger {
     display: none;
 }
+
 .hamburger:focus {
     outline: 0;
 }
+
 @media only screen and (max-width: 1000px) {
     .hamburger {
         display: block;
@@ -223,23 +279,28 @@ a {
         margin: 20px;
         align-self: flex-end;
     }
+
     .hamburger img {
         filter: invert(1);
     }
+
     nav ul {
         display: none;
         background-color: #2b2c38;
         margin: 0px;
     }
+
     /* using js: */
     ul.show {
         display: block;
     }
+
     nav {
         display: flex;
         flex-direction: column-reverse;
         background-color: #2b2c38;
     }
+
     .logo {
         display: none;
     }
