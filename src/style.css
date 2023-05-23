@@ -250,9 +250,17 @@ p {
     .headshot {
         width: 120px;
     }
-
+    footer {
+        padding: 30px;
+    }
     footer p {
         font-size: 22px;
+    }
+    .hero-text {
+        margin-left: 20px;
+    }
+    .hero-text h1 {
+        font-size: 65px;
     }
 }
 
